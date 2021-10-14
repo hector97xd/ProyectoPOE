@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaPOEDS19.Modelo
 {
-    class Conexion
+    public class Conexion
     {
     }
 }
