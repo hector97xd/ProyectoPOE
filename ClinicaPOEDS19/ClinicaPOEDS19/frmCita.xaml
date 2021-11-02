@@ -3,8 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"      
         xmlns:local="clr-namespace:ClinicaPOEDS19"
         mc:Ignorable="d"
+        
         Title="frmCita" Height="450" Width="800">
     <Grid>
         <DataGrid x:Name="dgcita" HorizontalAlignment="Left" Height="132" Margin="74,238,0,0" VerticalAlignment="Top" Width="508"/>
@@ -21,6 +23,6 @@
         <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="672,38,0,0" VerticalAlignment="Top" Width="94" Click="btnRegistrar_Click"/>
         <Button x:Name="btnRegistrar_Copy" Content="Expediente" HorizontalAlignment="Left" Margin="672,79,0,0" VerticalAlignment="Top" Width="94" Click="btnRegistrar_Click"/>
         <Button x:Name="btnRegistrar_Copy1" Content="Comprobante" HorizontalAlignment="Left" Margin="672,122,0,0" VerticalAlignment="Top" Width="94" Click="btnRegistrar_Click"/>
-
+      
     </Grid>
 </Window>
