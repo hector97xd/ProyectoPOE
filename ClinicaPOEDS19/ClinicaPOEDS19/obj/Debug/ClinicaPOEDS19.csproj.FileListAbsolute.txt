@@ -42,3 +42,5 @@ C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOED
 C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.csproj.CoreCompileInputs.cache
 C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.exe
 C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.pdb
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\frmEmpleado.g.cs
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\frmEmpleado.baml
