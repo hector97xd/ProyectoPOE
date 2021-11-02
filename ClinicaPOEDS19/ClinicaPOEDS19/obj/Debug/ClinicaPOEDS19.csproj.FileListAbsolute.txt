@@ -19,3 +19,26 @@ C:\Users\guill\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\De
 C:\Users\guill\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.csproj.CoreCompileInputs.cache
 C:\Users\guill\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.exe
 C:\Users\guill\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.pdb
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\frmCita.g.cs
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\frmPaciente.g.cs
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\MainWindow.g.cs
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\App.g.cs
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19_MarkupCompile.cache
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19_MarkupCompile.lref
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.csproj.AssemblyReference.cache
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\bin\Debug\ClinicaPOEDS19.exe.config
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\bin\Debug\ClinicaPOEDS19.exe
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\bin\Debug\ClinicaPOEDS19.pdb
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\bin\Debug\Dapper.dll
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\bin\Debug\Dapper.xml
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\frmCita.baml
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\frmPaciente.baml
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\MainWindow.baml
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.g.resources
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.Properties.Resources.resources
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.csproj.GenerateResource.cache
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.csproj.CoreCompileInputs.cache
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.exe
+C:\Users\Héctor Guevara\Documents\GitHub\ProyectoPOE\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\ClinicaPOEDS19.pdb

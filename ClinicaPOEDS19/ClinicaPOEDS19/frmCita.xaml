@@ -1,0 +1,26 @@
+﻿<Window x:Class="ClinicaPOEDS19.frmCita"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClinicaPOEDS19"
+        mc:Ignorable="d"
+        Title="frmCita" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgcita" HorizontalAlignment="Left" Height="132" Margin="74,238,0,0" VerticalAlignment="Top" Width="508"/>
+        <DatePicker x:Name="FechaCita" HorizontalAlignment="Left" Margin="74,29,0,0" VerticalAlignment="Top" SelectedDateFormat="Long" FirstDayOfWeek="Monday"/>
+        <ComboBox x:Name="cbxDoctor" HorizontalAlignment="Left" Margin="74,72,0,0" VerticalAlignment="Top" Width="145" IsReadOnly="True"/>
+        <ComboBox x:Name="cbxPaciente" HorizontalAlignment="Left" Margin="74,115,0,0" VerticalAlignment="Top" Width="145"/>
+        <RichTextBox x:Name="txtDecripcion" HorizontalAlignment="Left" Height="58" Margin="74,160,0,0" VerticalAlignment="Top" Width="508">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="672,38,0,0" VerticalAlignment="Top" Width="94" Click="btnRegistrar_Click"/>
+        <Button x:Name="btnRegistrar_Copy" Content="Expediente" HorizontalAlignment="Left" Margin="672,79,0,0" VerticalAlignment="Top" Width="94" Click="btnRegistrar_Click"/>
+        <Button x:Name="btnRegistrar_Copy1" Content="Comprobante" HorizontalAlignment="Left" Margin="672,122,0,0" VerticalAlignment="Top" Width="94" Click="btnRegistrar_Click"/>
+
+    </Grid>
+</Window>
