@@ -36,9 +36,10 @@ namespace ClinicaPOEDS19.DbContext
         {
             try
             {
+                cita.FechaIngreso = DateTime.Now;
                 using (IDbConnection cn = con.GetConnection)
                 {
-                    var query = @"INSERT INTO CITA(FechaIngreso,FechaCita,Descripcion,Paciente,Doctor) VALUES(GETDATE(),@FechaCita,@Descripcion,@Paciente,@Doctor);";
+                    var query = @"INSERT INTO CITA(FechaIngreso,FechaCita,Descripcion,Paciente,Doctor) VALUES(@FechaIngreso,@FechaCita,@Descripcion,@Paciente,@Doctor);";
                     cn.Open();
                     cn.Execute(query, cita);
                 }
@@ -46,6 +47,25 @@ namespace ClinicaPOEDS19.DbContext
             catch (Exception ex)
             {
                 ex.ToString();
+            }
+        }
+        public void Delete(int id)
+        {
+            using (IDbConnection cn = con.GetConnection)
+            {
+                var query = @"DELETE FROM CITA WHERE Id=@Id";
+                cn.Open();
+                cn.Execute(query, new { Id = id });
+            }
+        }
+        public void Update(Cita cita)
+        {
+            using (IDbConnection cn = con.GetConnection)
+            {
+                cita.FechaIngreso = DateTime.Now;
+                var query = @"UPDATE CITA SET FechaIngreso=@FechaIngreso,FechaCita=@FechaCita,Descripcion=@Descripcion,Paciente=@Paciente,Doctor=@Doctor WHERE Id=@Id";
+                cn.Open();
+                cn.Execute(query, cita);
             }
         }
     }

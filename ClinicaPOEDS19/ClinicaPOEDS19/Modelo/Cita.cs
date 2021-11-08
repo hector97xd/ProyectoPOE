@@ -8,6 +8,7 @@ namespace ClinicaPOEDS19.Modelo
 {
     public class Cita
     {
+     
         public int Id { get; set; }
         public DateTime FechaIngreso { get; set; }
         public DateTime FechaCita { get; set; }
@@ -15,4 +16,5 @@ namespace ClinicaPOEDS19.Modelo
         public int Paciente { get; set; }
         public int Doctor { get; set; }
     }
+
 }
