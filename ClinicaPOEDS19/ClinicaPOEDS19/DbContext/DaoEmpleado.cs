@@ -31,5 +31,64 @@ namespace ClinicaPOEDS19.DbContext
             }
             return ls;
         }
+
+        public void Add(Empleado empleado)
+        {
+            try
+            {
+                using (IDbConnection cn = con.GetConnection)
+                {
+                    var query = @"INSERT INTO EMPLEADO(Id,Nombre,TipoEmpleado,Especialidad,fechaNacimiento,sexo,Estado,Usuario) 
+                                VALUES(@Id,@Nombre,@TipoEmpleado,@Especialidad,@fechaNacimiento,@sexo,@Estado,@Usuario);";
+                    cn.Open();
+                    cn.Execute(query, empleado);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+        }
+
+        public void Update(Empleado empleado)
+        {
+            try
+            {
+                using (IDbConnection cn = con.GetConnection)
+                {
+                    var query = @"UPDATE EMPLEADO SET Id = @Id,Nombre = @Nombre,TipoEmpleado = @TipoEmpleado,Especialidad = @Especialidad
+                                fechaNacimiento = @fechaNacimiento,sexo = @sexo,Estado = @Estado,Usuario = @Usuario WHERE Id = @Id;";
+                    cn.Open();
+                    cn.Execute(query, empleado);
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+        }
+
+        public void Delete(Empleado empleado)
+        {
+            try
+            {
+                using (IDbConnection cn = con.GetConnection)
+                {
+                    var query = @"DELETE FROM EMPLEADO WHERE ID = @Id;";
+                    cn.Open();
+                    cn.Execute(query, empleado);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+        }
+
     }
 }
+

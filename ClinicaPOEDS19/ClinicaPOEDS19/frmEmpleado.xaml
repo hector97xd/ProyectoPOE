@@ -5,9 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClinicaPOEDS19"
         mc:Ignorable="d"
-        Title="frmEmpleado" Height="450" Width="800">
-    <Grid>
-        <DataGrid x:Name="dgEmpleado" HorizontalAlignment="Left" Height="100" Margin="126,139,0,0" VerticalAlignment="Top" Width="468"/>
+        Title="frmEmpleado" Height="646.782" Width="1153.466">
+    <Grid Margin="25,0,-0.4,-30">
+        <DataGrid x:Name="dgEmpleado" HorizontalAlignment="Left" Height="158" Margin="0,444,0,0" VerticalAlignment="Top" Width="1112"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="35" Margin="163,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" TextChanged="txtNombre_TextChanged_1"/>
+        <DatePicker x:Name="fechaNacimiento" HorizontalAlignment="Left" Margin="163,125,0,0" VerticalAlignment="Top" Height="34" Width="94" RenderTransformOrigin="0.498,0.463"/>
+        <RadioButton x:Name="rbdSexo" Content="Masculino" HorizontalAlignment="Left" Height="28" Margin="163,202,0,0" VerticalAlignment="Top" Width="115"/>
+        <RadioButton x:Name="rbdSexo2" Content="Femenino" HorizontalAlignment="Left" Margin="163,235,0,0" VerticalAlignment="Top" Height="33" Width="115"/>
+        <Label x:Name="lblNombre" Content="Nombre Completo&#xD;&#xA;" HorizontalAlignment="Left" Height="35" Margin="17,70,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label x:Name="lblFenac" Content="Fecha de Nacimiento" HorizontalAlignment="Left" Height="34" Margin="17,125,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label x:Name="lblSexo" Content="Sexo" HorizontalAlignment="Left" Height="38" Margin="17,218,0,0" VerticalAlignment="Top" Width="85"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Height="51" Margin="947,70,0,0" VerticalAlignment="Top" Width="127"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Height="51" Margin="947,142,0,0" VerticalAlignment="Top" Width="127"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Height="53" Margin="947,218,0,0" VerticalAlignment="Top" Width="127"/>
+        <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Height="54" Margin="947,288,0,0" VerticalAlignment="Top" Width="127"/>
+        <ComboBox x:Name="cbxTipoEmpleado" HorizontalAlignment="Left" Height="26" Margin="147,278,0,0" VerticalAlignment="Top" Width="201"/>
+        <ComboBox x:Name="cbxEspecialidad" HorizontalAlignment="Left" Height="24" Margin="147,332,0,0" VerticalAlignment="Top" Width="201"/>
+        <ComboBox x:Name="cbxEstado" HorizontalAlignment="Left" Height="33" Margin="556,278,0,0" VerticalAlignment="Top" Width="177">
+            <ComboBoxItem Content="ACTIVO"/>
+            <ComboBoxItem Content="INACTIVO"/>
+        </ComboBox>
+        <ComboBox x:Name="cbxUsuario" HorizontalAlignment="Left" Height="36" Margin="556,320,0,0" VerticalAlignment="Top" Width="177"/>
+        <Label x:Name="lblTipoEmpleado" Content="Tipo de Empleado" HorizontalAlignment="Left" Height="26" Margin="17,278,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="lblEspecialidad" Content="Especialidad" HorizontalAlignment="Left" Height="36" Margin="10,332,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" Height="27" Margin="415,294,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="lblUsuario" Content="Usuario" HorizontalAlignment="Left" Height="36" Margin="415,332,0,0" VerticalAlignment="Top" Width="131"/>
 
     </Grid>
 </Window>

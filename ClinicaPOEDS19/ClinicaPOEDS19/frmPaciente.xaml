@@ -1,13 +1,30 @@
-﻿<Window x:Class="ClinicaPOEDS19.frmPaciente"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClinicaPOEDS19"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" xmlns:Obselete="clr-namespace:Xceed.Wpf.Toolkit.Obselete;assembly=Xceed.Wpf.Toolkit" x:Class="ClinicaPOEDS19.frmPaciente"
         mc:Ignorable="d"
-        Title="frmPaciente" Height="450" Width="800">
-    <Grid>
-        <DataGrid x:Name="dgPacientes" HorizontalAlignment="Left" Height="188" Margin="45,51,0,0" VerticalAlignment="Top" Width="651" SelectionChanged="dgPacientes_SelectionChanged"/>
+        Title="frmPaciente" Height="578" Width="884.571">
+    <Grid Margin="0,0,-105.6,-59">
+        <DataGrid x:Name="dgPacientes" HorizontalAlignment="Left" Height="188" Margin="23,341,0,0" VerticalAlignment="Top" Width="650" SelectionChanged="dgPacientes_SelectionChanged"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Height="32" Margin="712,71,0,0" VerticalAlignment="Top" Width="94" Click="btnAgregar_Click"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Height="32" Margin="712,122,0,0" VerticalAlignment="Top" Width="94" Click="btnModificar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="712,172,0,0" VerticalAlignment="Top" Width="94" Click="btnEliminar_Click"/>
+        <DatePicker x:Name="FechaNacimiento" HorizontalAlignment="Left" Margin="183,190,0,0" VerticalAlignment="Top" Width="84" Height="33" RenderTransformOrigin="-0.191,0.514"/>
+        <RadioButton x:Name="rdbSexo" GroupName="sex" Content="Masculino" HorizontalAlignment="Right" Height="32" Margin="0,245,674,0" VerticalAlignment="Top" Width="127" Checked="RadioButton_Checked" RenderTransformOrigin="1.913,0.504" IsChecked="True"/>
+
+        <xctk:ZoomboxViewFinderDisplay HorizontalAlignment="Left" Height="100" Margin="588,10,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <Obselete:MaskedTextBox x:Name="txtDUI" HorizontalAlignment="Right" Height="23" Margin="0,140,680.6,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Width="120" Mask="00000000-0"/>
+        <Label x:Name="lblDUI" Content="Número DUI:" HorizontalAlignment="Left" Margin="50,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblGenero" Content="Sexo:" HorizontalAlignment="Right" Margin="0,253,898,0" VerticalAlignment="Top" RenderTransformOrigin="2.513,0.919"/>
+        <RadioButton x:Name="rdbSexo2"  GroupName ="sex" Content="Femenino" HorizontalAlignment="Right" Margin="0,295,727,0" VerticalAlignment="Top" RenderTransformOrigin="-0.279,0.61"/>
+        <Label x:Name="lblNombre" Content="Nombre Completo:" HorizontalAlignment="Left" Margin="50,86,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="183,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
+        <Label x:Name="lblFnac" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="50,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.246,0.257"/>
+        <Button x:Name="btnClear" Content="Reset" HorizontalAlignment="Left" Margin="712,223,0,0" VerticalAlignment="Top" Width="94" Click="btnClear_Click"/>
 
     </Grid>
 </Window>
