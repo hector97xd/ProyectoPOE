@@ -21,7 +21,6 @@
         </RichTextBox>
         <Button x:Name="btnRegistrar" Content="Guardar" HorizontalAlignment="Left" Margin="594,40,0,0" VerticalAlignment="Top" Width="144" Click="btnRegistrar_Click"/>
         <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="594,87,0,0" VerticalAlignment="Top" Width="144" Click="btnEliminar_Click"/>
-        <Button x:Name="btnComprobante" Content="Comprobante" HorizontalAlignment="Left" Margin="594,137,0,0" VerticalAlignment="Top" Width="144" Click="btnRegistrar_Click"/>
 
         <xctk:DateTimePicker materialDesign:HintAssist.Hint="Ingresar Fecha"  x:Name="FechaCita" HorizontalAlignment="Left" Margin="140,40,0,0" VerticalAlignment="Top" Width="206" Format="Custom" FormatString="dd-MMM-yy hh:mm:ss"/>
         <Label Content="Fecha de la cita:" HorizontalAlignment="Left" Margin="29,36,0,0" VerticalAlignment="Top"/>
