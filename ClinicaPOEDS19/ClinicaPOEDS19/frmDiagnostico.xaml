@@ -46,6 +46,7 @@
         </Label>
         <Button x:Name="btnReporte" Content="Reporte diagnostico" HorizontalAlignment="Left" Margin="490,270,0,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.559,-0.031" Click="btnReporte_Click" />
         <Label Content="TEST" HorizontalAlignment="Left" Margin="510,348,0,0" VerticalAlignment="Top" Width="131" FontWeight="Bold" FontSize="16"/>
+        <Label Content="TEST" HorizontalAlignment="Left" Margin="510,313,0,0" VerticalAlignment="Top" Width="131" FontWeight="Bold" FontSize="16"/>
 
 
     </Grid>
