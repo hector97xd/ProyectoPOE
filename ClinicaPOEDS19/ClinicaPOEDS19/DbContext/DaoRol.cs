@@ -12,7 +12,24 @@ namespace ClinicaPOEDS19.DbContext
     public class DaoRol
     {
         private Conexion con = new Conexion();
-
+        public List<Rol> GetRoles()
+        {
+            var ls = new List<Rol>();
+            try
+            {
+                using (IDbConnection cn = con.GetConnection)
+                {
+                    var query = @"SELECT * FROM ROL";
+                    cn.Open();
+                    ls = cn.Query<Rol>(query).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+            return ls;
+        }
         public List<Rol> GetAll()
         {
             var ls = new List<Rol>();

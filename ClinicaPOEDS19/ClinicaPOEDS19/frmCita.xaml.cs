@@ -19,7 +19,7 @@ namespace ClinicaPOEDS19
     /// <summary>
     /// Lógica de interacción para frmCita.xaml
     /// </summary>
-    public partial class frmCita : Window
+    public partial class frmCita : Page
     {
         DaoCita daocita = new DaoCita();
         DaoPaciente daopaciente = new DaoPaciente();
@@ -45,7 +45,6 @@ namespace ClinicaPOEDS19
             txtDecripcion.Selection.Text = "";
             cbxPaciente.SelectedValue = 0;
             cbxDoctor.SelectedValue = 0;
-            FechaCita.Minimum = DateTime.Now;
 
         }
 

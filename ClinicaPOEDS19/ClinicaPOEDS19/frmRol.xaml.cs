@@ -19,7 +19,7 @@ namespace ClinicaPOEDS19
     /// <summary>
     /// Lógica de interacción para frmRol.xaml
     /// </summary>
-    public partial class frmRol : Window
+    public partial class frmRol : Page
     {
         private DaoRol dao = new DaoRol();
         Rol rol = new Rol(); 

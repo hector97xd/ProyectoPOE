@@ -1,0 +1,40 @@
+﻿<Window x:Class="ClinicaPOEDS19.frmPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClinicaPOEDS19"
+        mc:Ignorable="d"
+        Title="frmPrincipal" Height="720" Width="1280">
+    <Grid>
+        <StackPanel x:Name="spAcciones" Orientation="Horizontal" Height="85" VerticalAlignment="Top" Background="LightGray" Margin="0,0,-0.4,0">
+            <Button x:Name="btnPagina2" Content="Pagina 2" MinWidth="100" Margin="75,2,0,1.2"  Width="88"/>
+        </StackPanel>
+        <Frame x:Name="frPrincipal" Margin="256,84,-0.4,0.4" Background="#FFFAFAF4" NavigationUIVisibility="Hidden"></Frame>
+        <Rectangle HorizontalAlignment="Left" Height="840
+                   " Stroke="Black" VerticalAlignment="Top" Width="256">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF8E66AC" Offset="0"/>
+                    <GradientStop Color="#FFECEFF9" Offset="1"/>
+                    <GradientStop Color="#FFCEC2DF" Offset="0.204"/>
+                    <GradientStop Color="#FFA486BE"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image x:Name="acita" HorizontalAlignment="Left" Height="91" Margin="0,244,0,0" VerticalAlignment="Top" Width="256" Source="AgendarCita.png" MouseDown="Image_MouseDown" Cursor="Hand"/>
+        <Image x:Name="diagnostico" HorizontalAlignment="Left" Height="91" Margin="0,357,0,0" VerticalAlignment="Top" Width="256" Source="Diagnostico.png" Cursor="Hand" MouseDown="Image_MouseDown_1"/>
+        <Image x:Name="mantenimiento" HorizontalAlignment="Left" Height="91" Margin="0,476,0,0" VerticalAlignment="Top" Width="256" Source="Mantenimiento.png" Cursor="Hand" MouseDown="mantenimiento_MouseDown"/>
+        <Image x:Name="reportes" HorizontalAlignment="Left" Height="91" Margin="0,589,0,0" VerticalAlignment="Top" Width="256" Source="Reportes.png" Cursor="Hand"/>
+        <Label x:Name="lblCerrarSesion" Content="Cerrar Sesión" Margin="1398,24,-254.4,0" VerticalAlignment="Top" FontSize="18" Foreground="#DDFF2500" RenderTransformOrigin="0.214,-2.077" FontWeight="Bold" MouseDown="lblCerrarSesion_MouseDown" Cursor="Hand" />
+        <Label x:Name="lblFecha" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="327,25,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#DD0D78FF" RenderTransformOrigin="1.105,0.514" FontWeight="Bold"/>
+        <Label x:Name="lblsuario_Copy" Content="Bienvenido" HorizontalAlignment="Left" Margin="70,47,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#DD050505" RenderTransformOrigin="0.428,2.187" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="70,85,0,0" VerticalAlignment="Top" Width="100" Source="logo.png"/>
+        <Label x:Name="lblFechal" Content="Fecha: " HorizontalAlignment="Left" Margin="261,24,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#DD000000" RenderTransformOrigin="1.105,0.514" FontWeight="Bold"/>
+        <Image x:Name="paciente" HorizontalAlignment="Left" Height="69" Margin="529,10,0,0" VerticalAlignment="Top" Width="201" Source="Paciente.png" MouseDown="paciente_MouseDown" Cursor="Hand"/>
+        <Image x:Name="empleado" HorizontalAlignment="Left" Height="69" Margin="735,10,0,0" VerticalAlignment="Top" Width="201" Source="Empleado.png" MouseDown="empleado_MouseDown" Cursor="Hand"/>
+        <Image x:Name="usuario" HorizontalAlignment="Left" Height="69" Margin="941,10,0,0" VerticalAlignment="Top" Width="201" Source="Usuario.png" MouseDown="usuario_MouseDown" Cursor="Hand"/>
+        <Image x:Name="rol" HorizontalAlignment="Left" Height="69" Margin="1147,10,-74.4,0" VerticalAlignment="Top" Width="201" Source="Rol.png" MouseDown="rol_MouseDown" Cursor="Hand"/>
+
+    </Grid>
+</Window>

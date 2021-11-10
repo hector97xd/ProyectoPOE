@@ -20,7 +20,7 @@ namespace ClinicaPOEDS19
     /// <summary>
     /// Lógica de interacción para frmPaciente.xaml
     /// </summary>
-    public partial class frmEmpleado : Window
+    public partial class frmEmpleado : Page
     {
         private DaoEmpleado dao = new DaoEmpleado();
         Empleado empleado = new Empleado();

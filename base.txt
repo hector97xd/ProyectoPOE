@@ -1,0 +1,86 @@
+CREATE TABLE USUARIO(
+    Id int PRIMARY KEY IDENTITY,
+    Usuario varchar(20) not null,
+    Clave varchar(100) not null,
+    Estado int,
+    FechaCreacion datetime not null
+)
+CREATE TABLE ROL(
+    Id int PRIMARY KEY IDENTITY,
+    Rol varchar(20) not null, 
+)
+CREATE TABLE ROL_USUARIO(
+    Id int PRIMARY KEY IDENTITY,
+    Usuario int,
+    Rol int,
+    FOREIGN KEY (Usuario) REFERENCES USUARIO(Id),
+    FOREIGN KEY (Rol) REFERENCES ROL(Id)
+)
+
+CREATE TABLE PACIENTE(
+    Id int PRIMARY KEY IDENTITY,
+    Dui varchar(20) not null,
+    Nombre varchar(100) not null,
+    fechaNacimiento DATE not null,
+    sexo varchar(10) not null,
+)
+CREATE TABLE EMPLEADO(
+     Id int PRIMARY KEY IDENTITY,
+     Nombre varchar(100) not null,
+     TipoEmpleado varchar(50) not null,
+     Especialidad varchar(50) not null,
+     fechaNacimiento Date not null,
+     sexo varchar(10) not null,
+     Estado int,
+     Usuario int,
+     FOREIGN KEY (Usuario) REFERENCES USUARIO(Id),
+
+)
+CREATE TABLE DIAGNOSTICO(
+    Id int PRIMARY KEY IDENTITY,
+    fechaDiagnostico date not null,
+    Descripcion varchar(500) not null,
+    Tratamiento varchar(500) not null,
+    Paciente int,
+    Doctor int,
+    FOREIGN KEY (Paciente) REFERENCES PACIENTE(Id),
+    FOREIGN KEY (Doctor) REFERENCES EMPLEADO(Id) 
+)
+
+CREATE TABLE CITA(
+    Id int IDENTITY,
+    FechaIngreso date not null,
+    FechaCita datetime not null,
+    Descripcion varchar(500) not null,
+    Paciente int,
+    Doctor int,
+    PRIMARY KEY (Id),
+    FOREIGN KEY (Paciente) REFERENCES PACIENTE(Id),
+    FOREIGN KEY (Doctor) REFERENCES EMPLEADO(Id)   
+
+)
+
+insert into ROL(Rol) values('ADMIN');
+insert into ROL(Rol) values('ENFERMERA');
+insert into ROL(Rol) values('DOCTOR');
+
+
+INSERT INTO USUARIO(USUARIO,CLAVE,ESTADO,FechaCreacion) VALUES('memo', ENCRYPTBYPASSPHRASE('Itca123!', '1234'), 1,GETDATE())
+INSERT INTO USUARIO(USUARIO,CLAVE,ESTADO,FechaCreacion) VALUES('maria', ENCRYPTBYPASSPHRASE('Itca123!', '1234'), 1,GETDATE())
+INSERT INTO USUARIO(USUARIO,CLAVE,ESTADO,FechaCreacion) VALUES('riky', ENCRYPTBYPASSPHRASE('Itca123!', '1234'), 1,GETDATE())
+
+insert into ROL_USUARIO(Usuario,Rol) values(1,1);
+insert into ROL_USUARIO(Usuario,Rol) values(2,2);
+insert into ROL_USUARIO(Usuario,Rol) values(3,3);
+
+select * from USUARIO;
+select * from ROL_USUARIO;
+select * from ROL;
+
+DROP TABLE DIAGNOSTICO;
+DROP TABLE CITA;
+DROP TABLE ROL_USUARIO;
+DROP TABLE ROL;
+DROP TABLE PACIENTE;
+DROP TABLE EMPLEADO;
+DROP TABLE USUARIO;

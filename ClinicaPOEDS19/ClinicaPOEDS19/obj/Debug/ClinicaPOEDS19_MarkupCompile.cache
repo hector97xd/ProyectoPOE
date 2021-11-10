@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\edale\Documents\GitHub\ProyectoPOE\proyecto\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\
+C:\Users\INFORMATICA\Documents\sourcetree\ClinicaPOEDS19\ClinicaPOEDS19\obj\Debug\
 ClinicaPOEDS19
 none
 false
 DEBUG;TRACE
-C:\Users\edale\Documents\GitHub\ProyectoPOE\proyecto\ClinicaPOEDS19\ClinicaPOEDS19\App.xaml
-4-1196860287
+C:\Users\INFORMATICA\Documents\sourcetree\ClinicaPOEDS19\ClinicaPOEDS19\App.xaml
+9-1078890691
 
-15-1735224724
-222113818805
-frmCita.xaml;frmEmpleado.xaml;frmPaciente.xaml;MainWindow.xaml;
+30462034857
+32-193655365
+frmCita.xaml;frmDiagnostico.xaml;frmEmpleado.xaml;frmPaciente.xaml;frmPrincipal.xaml;frmRol.xaml;frmUsuario.xaml;frmLogin.xaml;Reporte\frmReportes.xaml;
 
 False
 

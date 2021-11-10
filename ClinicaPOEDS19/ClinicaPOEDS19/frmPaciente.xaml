@@ -1,4 +1,4 @@
-﻿<Window
+﻿<Page
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -9,10 +9,10 @@
         Title="frmPaciente" Height="578" Width="884.571">
     <Grid Margin="0,0,-105.6,-59">
         <DataGrid x:Name="dgPacientes" HorizontalAlignment="Left" Height="188" Margin="23,341,0,0" VerticalAlignment="Top" Width="650" SelectionChanged="dgPacientes_SelectionChanged"/>
-        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Height="32" Margin="712,71,0,0" VerticalAlignment="Top" Width="94" Click="btnAgregar_Click"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left"  Margin="712,71,0,0" VerticalAlignment="Top" Height="32" Width="94" Click="btnAgregar_Click"/>
         <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Height="32" Margin="712,122,0,0" VerticalAlignment="Top" Width="94" Click="btnModificar_Click"/>
-        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="712,172,0,0" VerticalAlignment="Top" Width="94" Click="btnEliminar_Click"/>
-        <DatePicker x:Name="FechaNacimiento" HorizontalAlignment="Left" Margin="183,190,0,0" VerticalAlignment="Top" Width="84" Height="33" RenderTransformOrigin="-0.191,0.514"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="712,172,0,0" VerticalAlignment="Top" Height="32" Width="94" Click="btnEliminar_Click"/>
+        <DatePicker x:Name="FechaNacimiento" HorizontalAlignment="Left" Margin="183,190,0,0" VerticalAlignment="Top" Width="94" Height="32" RenderTransformOrigin="-0.191,0.514"/>
         <RadioButton x:Name="rdbSexo" GroupName="sex" Content="Masculino" HorizontalAlignment="Right" Height="32" Margin="0,245,674,0" VerticalAlignment="Top" Width="127" Checked="RadioButton_Checked" RenderTransformOrigin="1.913,0.504" IsChecked="True"/>
 
         <xctk:ZoomboxViewFinderDisplay HorizontalAlignment="Left" Height="100" Margin="588,10,0,0" VerticalAlignment="Top" Width="100"/>
@@ -25,6 +25,7 @@
         <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="183,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318"/>
         <Label x:Name="lblFnac" Content="Fecha Nacimiento:" HorizontalAlignment="Left" Margin="50,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.246,0.257"/>
         <Button x:Name="btnClear" Content="Reset" HorizontalAlignment="Left" Margin="712,223,0,0" VerticalAlignment="Top" Width="94" Click="btnClear_Click"/>
+        <Label Content="GESTION DE PACIENTES" HorizontalAlignment="Left" Margin="334,28,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Width="254"/>
 
     </Grid>
-</Window>
+</Page>

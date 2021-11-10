@@ -22,7 +22,7 @@ namespace ClinicaPOEDS19
     /// <summary>
     /// Lógica de interacción para frmUsuarios.xaml
     /// </summary>
-    public partial class frmUsuario : Window
+    public partial class frmUsuario : Page
     {
         private DaoUsuario dao = new DaoUsuario();
         Usuarios usu = new Usuarios();
