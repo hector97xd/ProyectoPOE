@@ -50,6 +50,49 @@ namespace ClinicaPOEDS19
             cmbDoctor.SelectedValue = 0;
             //FechaCita.Minimum = DateTime.Now;
         }
+
+        bool ValidarForlmulario()
+        {
+            bool estado = true;//Asumir que todo esta ok
+            string mensaje = null;
+            //validando objeto
+            if (string.IsNullOrEmpty(dpFecha.Text))
+            {
+                estado = false;
+                mensaje += "-Fecha diagnostico\n";
+            }
+            if ( txtDecripcion.Document.Blocks.Count==0)
+            {
+                estado = false;
+                mensaje += "-Descripcion diagnostico\n";
+
+            }
+            if (txtTratamiento.Document.Blocks.Count == 0)
+            {
+                estado = false;
+                mensaje += "-Tratamiento diagnostico\n";
+
+            }
+            if (cmbPaciente.SelectedItem==null)
+            {
+                estado = false;
+                mensaje += "-Seleccione un paciente\n";
+            }
+            if ((int)cmbDoctor.Items.Count==0)
+            {
+                estado = false;
+                mensaje += "-Seleccione un doctor\n";
+            }
+            if (!estado)
+            {
+                MessageBox.Show("Favor de completar o corregir los sientes campos:\n\n" + mensaje, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
+
+            return estado;
+
+        }
+
         public void MostrarDiagnostico()
         {
             var lsCita = daodiag.mostrar();
@@ -90,36 +133,42 @@ namespace ClinicaPOEDS19
 
         private void btnInsertar_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
+            string mensaje = null;
 
-                diag.fechaDiagnostico = dpFecha.SelectedDate.Value;
-                diag.Doctor = (int)cmbDoctor.SelectedValue;
-                diag.Paciente = (int)cmbPaciente.SelectedValue;
-                var descripcion = new TextRange(txtDecripcion.Document.ContentStart, txtDecripcion.Document.ContentEnd);
-                diag.Descripcion = descripcion.Text;
-                var tratamiento = new TextRange(txtTratamiento.Document.ContentStart, txtTratamiento.Document.ContentEnd);
-                diag.Tratamiento = tratamiento.Text;
-                if (diag.Id > 0)
+
+            if (ValidarForlmulario())
+            { 
+                try
                 {
-                    daodiag.Update(diag);
-                    MessageBox.Show("Modificación Completada", "Confirmación", MessageBoxButton.OK, MessageBoxImage.Information);
 
+                    diag.fechaDiagnostico = dpFecha.SelectedDate.Value;
+                    diag.Doctor = (int)cmbDoctor.SelectedValue;
+                    diag.Paciente = (int)cmbPaciente.SelectedValue;
+                    var descripcion = new TextRange(txtDecripcion.Document.ContentStart, txtDecripcion.Document.ContentEnd);
+                    diag.Descripcion = descripcion.Text;
+                    var tratamiento = new TextRange(txtTratamiento.Document.ContentStart, txtTratamiento.Document.ContentEnd);
+                    diag.Tratamiento = tratamiento.Text;
+                    if (diag.Id > 0)
+                    {
+                        daodiag.Update(diag);
+                        MessageBox.Show("Modificación Completada", "Confirmación", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    }
+                    else
+                    {
+                        daodiag.Add(diag);
+                        MessageBox.Show("Registrado Correctamente", "Confirmación", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    }
+
+                    MostrarDiagnostico();
+                    limpiar();
                 }
-                else
+                catch (Exception ex)
                 {
-                    daodiag.Add(diag);
-                    MessageBox.Show("Registrado Correctamente", "Confirmación", MessageBoxButton.OK, MessageBoxImage.Information);
 
+                    MessageBox.Show(ex.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-
-                MostrarDiagnostico();
-                limpiar();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
         public void limpiar()
